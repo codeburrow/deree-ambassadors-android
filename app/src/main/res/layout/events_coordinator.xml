@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/magic"
+        android:contentDescription="Set Your Profile Photo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Name"
+        android:id="@+id/events_coordinator_name"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_marginStart="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:paddingEnd="35dp"
+        android:text="To Be Sent"
+        android:id="@+id/requests_to_be_sent"
+        android:textColor="#ff3341"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="95dp"
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_requests_to_be_sent"
+        android:layout_below="@+id/requests_to_be_sent"
+        android:layout_alignEnd="@+id/requests_to_be_sent"
+        android:layout_alignBottom="@+id/list_assigned_requests"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sent Requests"
+        android:id="@+id/sent_requests"
+        android:textStyle="bold"
+        android:textColor="#ff3341"
+        android:layout_below="@+id/imageView2"
+        android:layout_toEndOf="@+id/requests_to_be_sent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_assigned_requests"
+        android:layout_below="@+id/sent_requests"
+        android:layout_alignStart="@+id/sent_requests"
+        android:layout_alignEnd="@+id/sent_requests"
+        android:layout_marginBottom="15dp"
+        android:layout_above="@+id/button"
+        />
+
+
+
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:background="#ff3341"
+        android:textColor="#090909"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/imageView2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:id="@+id/send_message"
+        android:layout_alignParentEnd="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messages"
+        android:id="@+id/view_message"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/send_message"
+        />
+
+
+
+</RelativeLayout>

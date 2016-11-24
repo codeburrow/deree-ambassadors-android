@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" >
+
+    <!-- Requests id (ID) - will be HIDDEN - used to pass to other activity -->
+    <TextView
+        android:id="@+id/theID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:paddingTop="10dp"/>
+
+    <!-- officeName Label -->
+    <TextView
+        android:id="@+id/theNameOfEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingBottom="10dp"
+        android:textSize="18sp"
+        android:textColor="#25030E"
+        android:textStyle="bold" />
+
+</LinearLayout>

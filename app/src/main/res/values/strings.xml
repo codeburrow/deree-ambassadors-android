@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Deree Ambassadors</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string><string name="request_form">DEREE Ambassadors \n Request Form</string>
+    <string name="arrival">Ambassadors Arrival</string>
+    <string name="departure">Ambassadors Departure</string>
+    <string name="start">Event Start Time</string>
+    <string name="end">Event End Time</string>
+    <string name="meet">Do you wish to meet with the ambassadors before the event?</string>
+    <string name="meet_time">Meeting Time</string>
+    <string name="num_amb">Number of Ambassadors Needed</string>
+    <string name="dress_code">Dress Code</string>
+    <string name="casual">Casual (Ambassador Hoodie and Jeans</string>
+    <string name="formal">Formal (Males: suit and shirt, Females: dresses or dress pants and shirt</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="other">Other</string>
+    <string name="tour">Campus Tour</string>
+    <string name="social">Social Event</string>
+    <string name="presentation">Presentation</string>
+    <string name="event_type">Type of Event</string>
+    <string name="date">Date of The Event:</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+
+    <string name="textView2"> <u>  Fill In The Fields   </u></string>
+</resources>

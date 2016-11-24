@@ -1,0 +1,518 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6D9C2">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/logoF"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:src="@drawable/deree_logo"
+            android:contentDescription="Deree Logo"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/logoF"
+            android:layout_alignTop="@id/logoF"
+            android:text="@string/request_form"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#790A1B"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoF"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textSize="22sp"
+            android:background="#891319"
+            android:textColor="#ffd"/>
+
+        <EditText
+            android:id="@+id/final_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:ems="10"
+            android:hint="Name of Event"
+            android:textColor="#2A5625"
+            android:textColorHint="#705743"
+            android:paddingBottom="20dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textCapWords">
+
+            <requestFocus/>
+        </EditText>
+
+        <EditText
+            android:id="@+id/office"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/final_name"
+            android:ems="10"
+            android:hint="Organizing Office"
+            android:textColor="#2A5625"
+            android:textColorHint="#705743"
+            android:paddingBottom="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="textCapWords"/>
+
+        <Button
+            android:id="@+id/date_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/office"
+            android:textSize="18sp"
+            android:text="@string/date"
+            android:background="#72B297"
+            android:textColor="#ffd"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/date_button"
+            android:layout_alignTop="@id/date_button"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#2A5625"
+            android:layout_toEndOf="@id/date_button"
+            />
+
+        <!-- android:ems="10" EXPLANATION: If the width was wrap_content the size of the field would be 10 characters -->
+        <EditText
+            android:id="@+id/final_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_tv"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:layout_marginBottom="20dp"
+            android:textColor="#2A5625"
+            android:textColorHint="#705743"/>
+
+        <TextView
+            android:id="@+id/event_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/final_description"
+            android:text="@string/event_type"
+            android:padding="10dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="#705743"/>
+
+        <CheckBox
+            android:id="@+id/campus_tour_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_type"
+            android:text="@string/tour"
+            android:padding="5dp"
+            />
+
+        <CheckBox
+            android:id="@+id/presentation_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/campus_tour_checkbox"
+            android:text="@string/presentation"
+            android:padding="5dp"
+            />
+
+        <CheckBox
+            android:id="@+id/social_event_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_type"
+            android:layout_toEndOf="@id/presentation_checkbox"
+            android:text="@string/social"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/other_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/social_event_checkbox"
+            android:layout_toEndOf="@id/presentation_checkbox"
+            android:text="@string/other"
+            android:padding="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/presentation_checkbox"
+            android:ems="10"
+            android:hint="Location"
+            android:textColor="#2A5625"
+            android:textColorHint="#705743"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="textCapWords"/>
+
+        <Button
+            android:id="@+id/startTime_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:textSize="18sp"
+            android:text="@string/start"
+            android:background="#72B297"
+            android:textColor="#ffd"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            />
+        <TextView
+            android:id="@+id/startTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/startTime_button"
+            android:layout_alignBottom="@id/startTime_button"
+            android:layout_alignTop="@id/startTime_button"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#2A5625"
+            />
+        <Button
+            android:id="@+id/endTime_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startTime_tv"
+            android:textSize="18sp"
+            android:text="@string/end"
+            android:background="#FF6347"
+            android:textColor="#ffd"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/endTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/endTime_button"
+            android:layout_alignBottom="@id/endTime_button"
+            android:layout_alignTop="@id/endTime_button"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#2A5625"
+            />
+
+        <Button
+            android:id="@+id/arrival_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/endTime_tv"
+            android:textSize="18sp"
+            android:text="@string/arrival"
+            android:background="#72B297"
+            android:textColor="#ffd"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/arrival_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/arrival_button"
+            android:layout_alignBottom="@id/arrival_button"
+            android:layout_alignTop="@id/arrival_button"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#2A5625"
+            />
+        <Button
+            android:id="@+id/dep_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/arrival_tv"
+            android:textSize="18sp"
+            android:text="@string/departure"
+            android:background="#FF6347"
+            android:textColor="#ffd"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/dep_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/dep_button"
+            android:layout_alignBottom="@id/dep_button"
+            android:layout_alignTop="@id/dep_button"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#2A5625"
+            />
+
+        <EditText
+            android:id="@+id/pickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dep_tv"
+            android:ems="10"
+            android:hint="Pick up Location"
+            android:textColor="#2A5625"
+            android:textColorHint="#705743"
+            android:paddingBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:id="@+id/dropOff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pickup"
+            android:ems="10"
+            android:hint="Drop Off Location"
+            android:textColor="#2A5625"
+            android:textColorHint="#705743"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="20dp"
+            android:inputType="textCapWords"/>
+
+        <TextView
+            android:id="@+id/numberAmbassador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dropOff"
+            android:text="@string/num_amb"
+            android:paddingBottom="15dp"
+            android:paddingTop="30dp"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:textColor="#2A5625"/>
+
+        <NumberPicker
+            android:id="@+id/ambNum"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/dropOff"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#72B297"
+            >
+            <!--android:nestedScrollingEnabled="false"-->
+        </NumberPicker>
+
+        <EditText
+            android:id="@+id/duties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ambNum"
+            android:ems="10"
+            android:hint="Duties"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:textColor="#2A5625"
+            android:textColorHint="#705743"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duties"
+            android:text="@string/dress_code"
+            android:textColor="#705743"
+           android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/dress_code_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView3"
+            android:layout_marginBottom="30dp">
+
+            <RadioButton
+                android:id="@+id/casual_radiobut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/casual"
+                android:padding="10dp"
+                />
+
+            <RadioButton
+                android:id="@+id/formal_radiobut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/formal"
+                android:padding="10dp"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/meeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dress_code_radio_group"
+            android:text="@string/meet"
+            android:textColor="#705743"
+            android:padding="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/meet_amb_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meeting"
+            android:layout_marginBottom="30dp">
+
+            <RadioButton
+                android:id="@+id/meet_amb_yes_radiobut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes"
+                android:checked="true"
+                android:padding="5dp"
+                />
+
+            <RadioButton
+                android:id="@+id/meet_amb_no_radiobut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no"
+                android:padding="5dp"
+                />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/meeting_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meet_amb_radio_group"
+            android:textSize="18sp"
+            android:text="@string/meet_time"
+            android:background="#72B297"
+            android:textColor="#ffd"
+            android:padding="10dp"
+            android:textAllCaps="true"
+            />
+
+        <TextView
+            android:id="@+id/meeting_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/meeting_button"
+            android:layout_alignBottom="@id/meeting_button"
+            android:layout_alignTop="@id/meeting_button"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:textColor="#2A5625"
+            />
+
+        <EditText
+            android:id="@+id/meetingPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meeting_button"
+            android:ems="10"
+            android:hint="Meeting Location"
+            android:textColor="#2A5625"
+            android:textColorHint="#705743"
+            android:paddingBottom="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:id="@+id/contactPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/meetingPlace"
+            android:ems="10"
+            android:hint="Contact Person for the Event"
+            android:textColor="#2A5625"
+            android:textColorHint="#705743"
+            android:paddingBottom="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="textCapWords"/>
+
+        <EditText
+            android:id="@+id/contactDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contactPerson"
+            android:ems="10"
+            android:hint="Contact Details (phone, email)"
+            android:textColor="#2A5625"
+            android:textColorHint="#705743"
+            android:paddingBottom="20dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contactDetails"
+            >
+        <Button
+            android:id="@+id/submit_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:onClick="submitRequest"
+            android:text="@string/submit"
+            android:background="#72B297"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#ffd"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/Cancel_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:onClick="cancelRequest"
+            android:text="@string/cancel"
+            android:background="#FF6347"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#ffd"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

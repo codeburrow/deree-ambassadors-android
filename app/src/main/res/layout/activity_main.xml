@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="14dp"
+              tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#a91319">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Send Request"
+        android:textAllCaps="false"
+        android:id="@+id/requestButton"
+        android:background="#F6D9C2"
+        android:textColor="#790a1b"
+        android:textSize="24sp"
+        android:onClick="startRequest"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Check Current Request"
+        android:textAllCaps="false"
+        android:id="@+id/currentRequestButton"
+        android:textColor="#F6D9C2"
+        android:textSize="24sp"
+        android:background="#790A1B"
+        android:onClick="checkCurrentRequest"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="View History"
+        android:textAllCaps="false"
+        android:id="@+id/historyButton"
+        android:background="#F6D9C2"
+        android:textColor="#790a1b"
+        android:textSize="24dp"
+        android:onClick="history"
+        android:layout_margin="10dp"/>
+</LinearLayout>

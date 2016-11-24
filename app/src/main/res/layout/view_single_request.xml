@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F6D9C2"
+              android:gravity="start"
+              android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+    <!-- ID Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request ID: "
+        android:textSize="18sp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:id="@+id/requestID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:paddingBottom="30dp"
+        android:textSize="18sp"
+        android:textColor="#2F0218"/>
+
+    <!-- Office Name Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Office Name: "
+        android:textSize="18sp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:id="@+id/officeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:paddingBottom="30dp"
+        android:textSize="18sp"
+        android:textColor="#2F0218"/>
+
+    <!-- dressingCode Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Title: "
+        android:textSize="18sp"
+        android:textColor="#111"/>
+
+    <TextView
+        android:id="@+id/nameOfEvent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp"
+        android:textSize="18sp"
+        android:textColor="#2F0218"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <!-- Button Go Back/View History -->
+        <Button
+            android:id="@+id/goBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="cancel"
+            android:text="View History"
+            android:textColor="#ffd"
+            android:textSize="18sp"
+            android:background="#790A1B"/>
+
+    </LinearLayout>
+
+</LinearLayout>

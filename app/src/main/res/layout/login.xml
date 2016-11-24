@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#d91319"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-60dp"
+        android:layout_marginBottom="40dp"
+        android:text="Come on in.."
+        android:textColor="#ffd"
+        android:textSize="24sp"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        >
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#F6D9C2"
+            android:hint="name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#701133"
+            android:textColorHint="#666"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#F6D9C2"
+            android:hint="password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="#701133"
+            android:textColorHint="#666"
+            />
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="#891319"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="log-in"
+            android:textColor="#ffd"/>
+
+        <!-- Link to Register Screen -->
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="#FF6347"
+            android:text="Not a member? Register!"
+            android:textAllCaps="false"
+            android:textColor="#F6D9C2"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
